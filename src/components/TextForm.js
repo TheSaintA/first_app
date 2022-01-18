@@ -38,7 +38,7 @@ export default function TextForm(props) {
                     <textarea className="form-control" style={{backgroundColor: props.mode==='dark'?'black':'white',color:props.mode==='light'?'black':'white'}} onChange={handleOnChange} id="textarea" rows="8" value={text}></textarea>
                     </div>
                     <div className="btn-group mx-auto d-block text-center">
-                    <button className='btn btn-outline-primary' onClick={handleUpClick}><span className='fas fa-font-case'></span></button>
+                    <button className='btn btn-outline-primary' onClick={handleUpClick}>Convert to uppercase</button>
                     <button className='btn btn-outline-success' onClick={handleLowClick}>Convert to lowercase</button>
                     <button className='btn btn-outline-danger' onClick={handleClearClick}><span className='fa fa-trash fa-lg'></span> Delete</button>
                     <button className='btn btn-outline-info' onClick={handleCopy}><span className='fa fa-copy fa-lg'></span> Copy</button>
